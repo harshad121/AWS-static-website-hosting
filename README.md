@@ -41,19 +41,19 @@ flowchart TD
 
 📦 Technologies Used
 
-AWS S3
-AWS IAM
-AWS CLI
-Git & GitHub
-HTML / CSS
-Git Bash
+1)AWS S3
+2)AWS IAM
+3)AWS CLI
+4)Git & GitHub
+5)HTML / CSS
+6)Git Bash
 
 🛠 Steps to Deploy 
-1️⃣ Create S3 Bucket
 
-Disable Block Public Access
+1️⃣ Create S3 Bucket :-
 
-Enable Static Website Hosting
+1)Disable Block Public Access
+2)Enable Static Website Hosting
 
 2️⃣ Upload HTML File :-
 
