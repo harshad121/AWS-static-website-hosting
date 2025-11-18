@@ -31,6 +31,7 @@ The final website is accessible publicly via the S3 website endpoint.
 ---
 
 ## 🏗 Architecture Diagram
+
 flowchart TD
     User((User)) -->|HTTP Request| S3[(Amazon S3 Static Website)]
     S3 -->|HTML/CSS/JS| User
@@ -41,12 +42,12 @@ flowchart TD
 
 📦 Technologies Used
 
-1)AWS S3
-2)AWS IAM
-3)AWS CLI
-4)Git & GitHub
-5)HTML / CSS
-6)Git Bash
+AWS S3
+AWS IAM
+AWS CLI
+Git & GitHub
+HTML / CSS
+Git Bash
 
 🛠 Steps to Deploy 
 
