@@ -39,7 +39,7 @@ flowchart TD
     AWSCLI --> S3
 
 
-📦** Technologies Used**
+📦 Technologies Used
 
 AWS S3
 AWS IAM
