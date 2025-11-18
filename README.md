@@ -39,7 +39,7 @@ flowchart TD
     AWSCLI --> S3
 
 
-📦 Technologies Used
+📦** Technologies Used**
 
 AWS S3
 AWS IAM
@@ -48,18 +48,20 @@ Git & GitHub
 HTML / CSS
 Git Bash
 
-🛠 Steps to Deploy
+🛠 Steps to Deploy 
 1️⃣ Create S3 Bucket
 
 Disable Block Public Access
 
 Enable Static Website Hosting
 
-2️⃣ Upload HTML File
+2️⃣ Upload HTML File :-
 
 Example index.html included in this repository.
 
 3️⃣ Add Bucket Policy
+
+
 {
   "Version": "2012-10-17",
   "Statement": [
@@ -73,13 +75,18 @@ Example index.html included in this repository.
   ]
 }
 
-4️⃣ Configure AWS CLI
+4️⃣ Configure AWS CLI :-
 aws configure
 
-5️⃣ Deploy Website Using CLI
+5️⃣ Deploy Website Using CLI :-
 aws s3 sync . s3://your-bucket-name --exclude ".git/*"
 
 🔗 GitHub Repository
 
 👉 https://github.com/harshad121/AWS-static-website-hosting
+
+🌍 Live Website URL
+
+http://site-1210.s3-website-us-east-1.amazonaws.com
+
 
