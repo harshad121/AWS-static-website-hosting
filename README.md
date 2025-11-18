@@ -1,0 +1,85 @@
+# 🌐 AWS S3 Static Website Hosting
+
+This project demonstrates hosting a static website using **Amazon S3**, configuring bucket permissions, using **AWS CLI for deployments**, and managing project versions using **Git & GitHub**.
+
+---
+
+## 🚀 Project Overview
+
+In this project, I deployed a static website using:
+
+- **Amazon S3** for hosting
+- **Bucket Policies** for public access
+- **AWS CLI** for uploading files
+- **Git** for version control
+- **GitHub** as source repository
+
+The final website is accessible publicly via the S3 website endpoint.
+
+---
+
+## 📁 Project Features
+
+✔ Static website hosted on AWS S3  
+✔ Public access configured through bucket policy  
+✔ Version control with Git  
+✔ Deployment using `aws s3 sync`  
+✔ Secure IAM user with S3 permissions  
+✔ Clean folder structure  
+✔ Professional GitHub documentation  
+
+---
+
+## 🏗 Architecture Diagram
+flowchart TD
+    User((User)) -->|HTTP Request| S3[(Amazon S3 Static Website)]
+    S3 -->|HTML/CSS/JS| User
+    Git[Local Git Repository] -->|Push via AWS CLI| S3
+    IAM[IAM User] -->|Access Key/Secret| AWSCLI[(AWS CLI)]
+    AWSCLI --> S3
+
+
+📦 Technologies Used
+
+AWS S3
+AWS IAM
+AWS CLI
+Git & GitHub
+HTML / CSS
+Git Bash
+
+🛠 Steps to Deploy
+1️⃣ Create S3 Bucket
+
+Disable Block Public Access
+
+Enable Static Website Hosting
+
+2️⃣ Upload HTML File
+
+Example index.html included in this repository.
+
+3️⃣ Add Bucket Policy
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PublicReadGetObject",
+      "Effect": "Allow",
+      "Principal": "*",
+      "Action": "s3:GetObject",
+      "Resource": "arn:aws:s3:::<your-bucket-name>/*"
+    }
+  ]
+}
+
+4️⃣ Configure AWS CLI
+aws configure
+
+5️⃣ Deploy Website Using CLI
+aws s3 sync . s3://your-bucket-name --exclude ".git/*"
+
+🔗 GitHub Repository
+
+👉 https://github.com/harshad121/AWS-static-website-hosting
+
