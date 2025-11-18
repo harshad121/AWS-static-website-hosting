@@ -39,6 +39,7 @@ flowchart TD
     IAM[IAM User] -->|Access Key/Secret| AWSCLI[(AWS CLI)]
     AWSCLI --> S3
 
+---
 
 📦 Technologies Used
 
@@ -48,6 +49,8 @@ AWS CLI
 Git & GitHub
 HTML / CSS
 Git Bash
+
+---
 
 🛠 Steps to Deploy 
 
@@ -82,9 +85,13 @@ aws configure
 5️⃣ Deploy Website Using CLI :-
 aws s3 sync . s3://your-bucket-name --exclude ".git/*"
 
+---
+
 🔗 GitHub Repository
 
 👉 https://github.com/harshad121/AWS-static-website-hosting
+
+---
 
 🌍 Live Website URL
 
